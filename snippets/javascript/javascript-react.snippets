@@ -1,3 +1,25 @@
+extends ts, tsx, js, jsx, javascript
+
+priority -50
+
+snippet reduxslice "redux Slice component"
+	import { createSlice } from '@reduxjs/toolkit';
+
+	export const slice = createSlice({
+		name: '$0',
+		initialState: {
+			subscibedStocks: [],
+		},
+		reducers: {
+			addStockSubscription: (state, action) => {},
+		}
+	});
+
+	export const selectDisplayName = (state) => state.$1.subscibedStocks;
+	export const { addStockSubscription } = slice.actions;
+	export default slice.reducer;
+endsnippet
+
 snippet ir
 	import React from 'react';
 snippet irc
