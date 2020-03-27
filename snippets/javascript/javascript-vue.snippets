@@ -1,27 +1,27 @@
 extends vue, scss, html, css, javascript
 
 snippet vcomp "vue component"
-<template>
-	<div>
-		$0
-	</div>
-</template>
-<script>
-	export default {
-		name: 'NAME',
-		components: {},
-		props: {
-			$1
-			title: String,
-		},
-		data() {
-			return {
-				$2
-			}
-		},
-		computed: {},
-		methods: {},
-	}
-</script>
-<style lang="scss" scoped></style>
+	<template>
+		<div>
+			$0
+		</div>
+	</template>
+	<script>
+		export default {
+			name: 'NAME',
+			components: {},
+			props: {
+				$1
+				title: String,
+			},
+			data() {
+				return {
+					$2
+				}
+			},
+			computed: {},
+			methods: {},
+		}
+	</script>
+	<style lang="scss" scoped></style>
 endsnippet
